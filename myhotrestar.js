@@ -14,12 +14,12 @@ app.get("/", function(req, res) {
     res.sendFile(path.join(__dirname, "home.html"));
 });
 
-app.get("/addreservations", function(req, res) {
-    res.sendFile(path.join(__dirname, "addreservations.html"));
+app.get("/reservations", function(req, res) {
+    res.sendFile(path.join(__dirname, "reservations.html"));
 });
 
-app.get("/reservations_waiting", function(req, res) {
-    res.sendFile(path.join(__dirname, "reservations_waiting.html"));
+app.get("/tables", function(req, res) {
+    res.sendFile(path.join(__dirname, "tables.html"));
 });
 
 app.get("/api/reservations", function(req, res) {
